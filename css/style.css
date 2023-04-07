@@ -13,6 +13,7 @@
     --white: #fff;
     --black: #000;
     --price-color: #4B4A4A;
+    --grey: #BAB7B7;
 }
 * {
     margin: 0;
@@ -192,7 +193,41 @@ button {
     align-items: center;
 }
 
+/* --------------------------- About start -------------------------- */
+.about {
+    margin-bottom: 70px;
+}
+.about .container {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.about__desc h2 {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 53px;
+    margin-bottom: 65px;
+}
+.about__desc p {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
 /* ----------------------------- Courses start ----------------------- */
+.courses {
+    position: relative;
+}
+.courses::before {
+    content: url(/image/courses-bg.png);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
 .courses__cards {
     margin-top: 60px;
     display: flex;
@@ -270,7 +305,26 @@ button {
 }
 
 /* -------------------------- Subscribe start ------------------------- */
-
+.subscribe {
+    margin-bottom: 70px;
+    position: relative;
+}
+.subscribe::before {
+    content: url(/image/subscribe-bg.png);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.subscribe::after {
+    content: url(/image/header-shadow-2.png);
+    position: absolute;
+    left: 0;
+    bottom: -73%;
+    transform: rotate(180deg);
+    z-index: -1;
+    /* height: 600px; */
+}
 .subscribe__title {
     font-family: var(--Inter);
     font-size: 60px;
@@ -315,6 +369,7 @@ button {
     width: 100%;
     box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.164);
     border-radius: 20px;
+    background: var(--white);
     padding: 25px 20px;
     position: relative;
     transition: ease .5s;
@@ -407,4 +462,65 @@ button {
 }
 .subscribe__card-btn:hover {
     color: var(--white);
+}
+
+/* ------------------------------- Team ---------------------------------- */
+
+.team__cards {
+    background: var(--white);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.196);
+    border-radius: 38px;
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.team__card {
+    max-width: 350px;
+    width: 100%;
+    padding: 17px 25px;
+    border-radius: 14px;
+    transition: .5s;
+}
+.team__card:hover {
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.231);
+    transform: translateY(20px);
+}
+.team__card img {
+    max-width: 299px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 14px;
+    margin-bottom: 14px;
+}
+.team__card p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.team__card span {
+    color: var(--grey);
+    font-weight: 500;
+    margin: 5px 0 12px;
+    display: block;
+}
+.team__card-links {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.team__card-links a i {
+    width: 52px;
+    height: 52px;
+    background: var(--grey);
+    border-radius: 50%;
+    font-size: 34px;
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    transition: .4s;
+}
+.team__card-links a:hover i {
+    box-shadow: -3px 6px 9px 5px rgba(0, 0, 0, 0.356);
 }
