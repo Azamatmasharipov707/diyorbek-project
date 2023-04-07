@@ -1,0 +1,410 @@
+@import 'font.css';
+:root {
+    --Inter: 'Inter';
+    --BebasNeue: 'BebasNeue';
+    --Montserrat: 'Montserrat';
+    --OpenSans: 'OpenSans';
+    --Poppins: 'Poppins';
+    --link: #767676;
+    --title: #242323;
+    --btn: #A4CF69;
+    --btn-hover: #7e9f4f;
+    --text: #6C6C6A;
+    --white: #fff;
+    --black: #000;
+    --price-color: #4B4A4A;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: var(--Inter);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.container {
+    max-width: 1370px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.btn {
+    max-width: 190px;
+    width: 100%;
+    background: var(--btn);
+    border-radius: 10px;
+    padding: 12px 0;
+    flex-shrink: 0;
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 500;
+    transition: 500ms;
+}
+.btn:hover {
+    background: var(--btn-hover);
+}
+.title {
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.flex {
+    display: flex;
+}
+.between {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+
+/* ================================== Header start =============================== */
+.header {
+    position: relative;
+}
+.header::before {
+    content: url(/image/header-shadow.png);
+    position: absolute;
+    height: 700px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.header::after {
+    content: url(/image/header-shadow-2.png);
+    position: absolute;
+    height: 700px;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.nav {
+    padding: 54px 0 12px;
+}
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 30px;
+}
+.nav__link {
+    font-size: 20px;
+    color: var(--link);
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+.nav__link::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--link);
+    left: 0;
+    bottom: 0;
+    transition: 500ms;
+}
+.nav__link:hover::before {
+    width: 100%;
+}
+.registration {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.registration__btn1 {
+    max-width: 126px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 12px 0;
+    flex-shrink: 0;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--link);
+    transition: .5s;
+    font-weight: 500;
+}
+.registration__btn1:hover {
+    background: #cdcbcb;
+}
+/* ----------------------------------------------------- */
+.header__content .container {
+    display: flex;
+    align-items: center;
+}
+.header__title {
+    font-family: var(--BebasNeue);
+    font-weight: 400;
+    font-size: 115px;
+    position: relative;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    line-height: 123px;
+}
+.header__title img {
+    position: absolute;
+    right: 7%;
+    top: 13%;
+}
+.header__txt {
+    font-family: var(--OpenSans);
+    font-weight: 600;
+    color: var(--text);
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 626px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* ======================================== Main start ====================================== */
+
+/* ------------------------- Brands start ----------------------- */
+.brands {
+    margin: 30px 0 120px;
+    position: relative;
+}
+.brands .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ----------------------------- Courses start ----------------------- */
+.courses__cards {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.courses__card {
+    max-width: 319px;
+    width: 100%;
+    box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .5s;
+    margin-bottom: 39px;
+}
+.courses__card img {
+    width: 100%;
+    height: 312px;
+    object-fit: cover;
+}
+.courses__card-footer {
+    padding: 29px 18px;
+    font-family: var(--Poppins);
+    position: relative;
+}
+.courses__card-title {
+    font-weight: 500;
+    font-size: 24px;
+}
+.courses__card-name {
+    color: var(--text);
+    font-weight: 500;
+    margin-bottom: 9px;
+    margin-top: 5px;
+    line-height: 14px;
+}
+.courses__card-stars {
+    color: #AB6729;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.courses__card-stars i {
+    color: #E59819;
+}
+.courses__card-price {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--price-color);
+}
+.courses__card-btn {
+    width: 52px;
+    height: 52px;
+    background: var(--btn);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -20%;
+    top: 40%;
+    transition: .5s;
+}
+.courses__card:hover {
+    box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.408);
+    transform: scale(1.01);
+}
+.courses__card-btn:hover {
+    background: var(--btn-hover);
+}
+.courses__card:hover .courses__card-btn {
+    right: 10%;
+}
+
+/* -------------------------- Subscribe start ------------------------- */
+
+.subscribe__title {
+    font-family: var(--Inter);
+    font-size: 60px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+}
+.subscribe__txt {
+    font-family: var(--Inter);
+    font-size: 18px;
+    color: var(--text);
+    font-weight: 700;
+    text-align: center;
+}
+.subscribe__btns {
+    max-width: 340px;
+    width: 100%;
+    margin: 23px auto 43px;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4px;
+    padding: 7px 10px;
+}
+.subscribe__btn {
+    width: 50%;
+    font-size: 18px;
+    font-family: var(--Inter);
+    font-weight: 500;
+    padding: 18px 0;
+    border-radius: 10px;
+    transition: .5s;
+}
+.subscribe__btn.active {
+    background: var(--btn-hover);
+    color: var(--white);
+}
+.subscribe__card {
+    max-width: 374px;
+    width: 100%;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.164);
+    border-radius: 20px;
+    padding: 25px 20px;
+    position: relative;
+    transition: ease .5s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.subscribe__card:hover {
+    background: var(--btn-hover);
+    transform: scale(1.04);
+}
+.subscribe__card:hover .subscribe__card-title {
+    color: var(--white);
+}
+.subscribe__card:hover  .subscribe__card-txt {
+    color: var(--white);
+}
+.subscribe__card:hover .subscribe__card-price {
+    color: var(--white);
+}
+.subscribe__card::before {
+    content: url(/image/circle.png);
+    position: absolute;
+    width: 100%;
+    bottom: -20%;
+    left: 0;
+    z-index: -1;
+}
+.subscribe__card-body {
+    background: #F9FAFB;
+    border-radius: 10px;
+}
+.subscribe__card-title {
+    font-family: var(--Inter);
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: var(--title);
+}
+.subscribe__card-txt {
+    font-size: 18px;
+    font-family: var(--Inter);
+    font-weight: 500;
+    color: var(--text);
+    text-align: center;
+    margin: 10px 0 40px;
+}
+.subscribe__card-price {
+    text-align: center;
+    position: relative;
+}
+.subscribe__card-price .dollar {
+    position: absolute;
+    color: var(--text);
+    font-size: 18px;
+    top: -15%;
+    left: 36%;
+}
+.subscribe__card-price .price {
+    font-family: var(--Inter);
+    font-weight: 600;
+    font-size: 50px;
+    color: var(--title);
+}
+.subscribe__card-body {
+    padding: 28px 37px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.subscribe__card-body p {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 26px;
+    font-family: var(--Inter);
+    font-weight: 500;
+    font-size: 18px;
+}
+.subscribe__card-btn {
+    max-width: 100%;
+    font-family: var(--Inter);
+    font-weight: 600;
+    padding: 17px 0;
+    border-radius: 20px;
+    background: var(--white);
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
+    color: var(--btn);
+}
+.subscribe__card-btn:hover {
+    color: var(--white);
+}
