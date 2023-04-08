@@ -524,3 +524,63 @@ button {
 .team__card-links a:hover i {
     box-shadow: -3px 6px 9px 5px rgba(0, 0, 0, 0.356);
 }
+
+/* ================================== Footer start ================================ */
+
+.footer {
+    background: var(--btn);
+    padding: 40px 0;
+    margin-top: 76px;
+}
+.footerr {
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+    padding: 19px 0 80px;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__list {
+    color: var(--white);
+}
+.footer__list h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.footer__list li a {
+    color: var(--white);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    margin-bottom: 12px;
+    transition: .5s;
+}
+.footer__list li a:hover {
+    padding-left: 10px;
+    text-shadow: 2px 3px 3px green;
+}
+.footer__list:last-of-type li a:hover {
+    padding-left: unset;
+}
+.footer__list h3:last-of-type {
+    margin-bottom: 19px;
+}
+.footer__list:first-of-type ul li a:hover {
+    padding-left: unset;
+}
+.footer__list ul {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.footer__list ul li a {
+    font-size: 24px;
+}
+.footer__list p {
+    max-width: 423px;
+    width: 100%;
+    margin-bottom: 24px;
+}
