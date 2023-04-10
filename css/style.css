@@ -584,3 +584,104 @@ button {
     width: 100%;
     margin-bottom: 24px;
 }
+
+
+/* ====================================== Data base start ================================== */
+.videos {
+    padding: 56px 0 47px;
+}
+.videos__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 9px 12px;
+}
+.select span {
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: var(--link);
+    margin-right: 10px;
+    font-family: var(--Poppins);
+}
+.select select {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--btn);
+    font-size: 18px;
+    font-family: var(--Poppins);
+}
+.search {
+    background: var(--white);
+    border-radius: 8px;
+    height: 44px;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #EDEBEB;
+    border-radius: 8px 0 0 8px;
+    padding-left: 16px;
+    outline: none;
+}
+.search i {
+    font-size: 18px;
+    padding: 14px 30px;
+}
+.videos__body {
+    margin: 85px 0 56px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.videos__card {
+    max-width: 435px;
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 4px 0px 15px rgba(158, 157, 157, 0.304);
+    overflow: hidden;
+    margin-bottom: 56px;
+    cursor: pointer;
+    transition: .5s;
+}
+.videos__card:hover {
+    box-shadow: 4px 0px 15px rgba(158, 157, 157, 0.673);
+    transform: scale(1.01);
+}
+.videos__card img {
+    width: 100%;
+    min-height: 312px;
+}
+.videos__card .videos__card-footer h3 {
+    font-family: var(--Poppins);
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 9px;
+    line-height: 14px;
+}
+.videos__card .videos__card-footer p {
+    font-family: var(--Poppins);
+    font-size: 15px;
+    color: var(--text);
+    line-height: 18px;
+    margin-bottom: 11px;
+}
+.videos__card .videos__card-footer span {
+    font-family: var(--Poppins);
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--text);
+}
+.videos__card-footer {
+    padding: 20px 19px 17px;
+}
