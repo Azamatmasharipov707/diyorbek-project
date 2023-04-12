@@ -10,6 +10,7 @@
     --btn: #A4CF69;
     --btn-hover: #7e9f4f;
     --text: #6C6C6A;
+    --text-2: #666789;
     --white: #fff;
     --black: #000;
     --price-color: #4B4A4A;
@@ -624,6 +625,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: auto;
 }
 
 .search input {
@@ -684,4 +686,54 @@ button {
 }
 .videos__card-footer {
     padding: 20px 19px 17px;
+}
+
+
+
+/* =================================== Our courses page start =========================== */
+
+.ourCourses__title {
+    font-size: 35px;
+    text-transform: capitalize;   
+}
+.ourCourses__text {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--title);
+    margin: 27px 0;
+    max-width: 747px;
+    width: 100%;
+}
+.ourCourses__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+.ourCourses__card {
+    box-shadow: 0px 0px 30px 10px #EAEAEE;
+    border-radius: 5px;
+    max-width: 655px;
+    width: 100%;
+    padding: 20px 30px;
+    background: var(--white);
+    font-family: var(--Inter);
+}
+.ourCourses__card h3 {
+    font-size: 18px;
+    color: var(--title);
+}
+.ourCourses__card p {
+    color: var(--text-2);
+    margin: 13px 0;
+}
+.ourCourses__card button {
+    font-size: 14px;
+    padding: 10px 14px;
+    color: var(--white);
+    border-radius: 30px;
+    transition: .5s;
+}
+.ourCourses__card button:hover {
+    letter-spacing: 1px;
 }
