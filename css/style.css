@@ -15,6 +15,7 @@
     --black: #000;
     --price-color: #4B4A4A;
     --grey: #BAB7B7;
+    --star: #ECD71E;
 }
 * {
     margin: 0;
@@ -736,4 +737,70 @@ button {
 }
 .ourCourses__card button:hover {
     letter-spacing: 1px;
+}
+
+/* ================================= About Course page start ============================== */
+
+.database__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+}
+
+.database__content img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.database__content-desc {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 72px;
+    background: linear-gradient(90.15deg, rgba(125, 186, 40, 0.3) 3.98%, rgba(40, 116, 186, 0.3) 95.84%);
+}
+.database__content-desc h1 {
+    font-family: var(--BebasNeue);
+    font-size: 100px;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 103px;
+}
+.database__content-desc p {
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+.database__content-desc p i {
+    color: var(--star);
+    font-size: 22px;
+}
+.database__content-desc p i:last-of-type {
+    color: var(--white);
+    margin-right: 10px;
+}
+.pupils__comments {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+.pupils__comments span:first-of-type {
+    margin-right: 60px;
+}
+.pupils__comments i {
+    margin-right: 4px;
+}
+.pupils__btn {
+    display: block;
+    text-align: center;
+    max-width: 320px;
+    width: 100%;
+    padding: 30px 0;
+    font-family: var(--Montserrat);
+    text-transform: uppercase;
+    margin-top: 17px;
 }
