@@ -46,6 +46,7 @@ button {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    overflow: hidden;
 }
 .btn {
     max-width: 190px;
@@ -82,11 +83,12 @@ button {
 /* ================================== Header start =============================== */
 .header {
     position: relative;
+    /* overflow: hidden; */
 }
 .header::before {
     content: url(/image/header-shadow.png);
     position: absolute;
-    height: 700px;
+    height: 80vh;
     left: 0;
     top: 0;
     z-index: -1;
@@ -97,7 +99,11 @@ button {
     height: 700px;
     right: 0;
     top: 0;
+    bottom: 0;
     z-index: -1;
+}
+.header.active::after {
+    display: none;
 }
 .nav {
     padding: 54px 0 12px;
@@ -803,4 +809,66 @@ button {
     font-family: var(--Montserrat);
     text-transform: uppercase;
     margin-top: 17px;
+}
+
+/* ---------------------------------- Advantages start -------------------------------------- */
+.advantages {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 80px;
+}
+.advantages::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background: var(--text);
+    bottom: 0;
+}
+.advantages .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 50px;
+}
+.advantages__list h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--text);
+    margin-bottom: 39px;
+}
+.advantages__item {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+.m-s {
+    margin-left: 35px;
+}
+.advantages__item i {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--star);
+}
+.advantages__desc {
+    max-width: 636px;
+    width: 100%;
+}
+
+.advantages__desc h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.advantages__desc p {
+    line-height: 26px;
+    color: var(--text);
+    font-weight: 500;
 }
