@@ -1,4 +1,5 @@
 @import 'font.css';
+
 :root {
     --Inter: 'Inter';
     --BebasNeue: 'BebasNeue';
@@ -17,6 +18,7 @@
     --grey: #BAB7B7;
     --star: #ECD71E;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -48,6 +50,13 @@ button {
     padding: 0 15px;
     overflow: hidden;
 }
+
+.reg__container {
+    width: min(1049px, 100%);
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .btn {
     max-width: 190px;
     width: 100%;
@@ -60,9 +69,11 @@ button {
     font-weight: 500;
     transition: 500ms;
 }
+
 .btn:hover {
     background: var(--btn-hover);
 }
+
 .title {
     font-weight: 500;
     font-size: 60px;
@@ -73,9 +84,11 @@ button {
 .flex {
     display: flex;
 }
+
 .between {
     justify-content: space-between;
 }
+
 .items-center {
     align-items: center;
 }
@@ -85,6 +98,7 @@ button {
     position: relative;
     /* overflow: hidden; */
 }
+
 .header::before {
     content: url(/image/header-shadow.png);
     position: absolute;
@@ -93,6 +107,7 @@ button {
     top: 0;
     z-index: -1;
 }
+
 .header::after {
     content: url(/image/header-shadow-2.png);
     position: absolute;
@@ -102,13 +117,17 @@ button {
     bottom: 0;
     z-index: -1;
 }
+
 .header.active::after {
     display: none;
 }
+
 .nav {
     padding: 54px 0 12px;
 }
-.nav .container {
+
+.nav .container,
+.reg__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,6 +137,7 @@ button {
     display: flex;
     column-gap: 30px;
 }
+
 .nav__link {
     font-size: 20px;
     color: var(--link);
@@ -125,6 +145,7 @@ button {
     font-weight: 500;
     position: relative;
 }
+
 .nav__link::before {
     content: '';
     position: absolute;
@@ -135,14 +156,17 @@ button {
     bottom: 0;
     transition: 500ms;
 }
+
 .nav__link:hover::before {
     width: 100%;
 }
+
 .registration {
     display: flex;
     align-items: center;
     column-gap: 10px;
 }
+
 .registration__btn1 {
     max-width: 126px;
     width: 100%;
@@ -155,14 +179,17 @@ button {
     transition: .5s;
     font-weight: 500;
 }
+
 .registration__btn1:hover {
     background: #cdcbcb;
 }
+
 /* ----------------------------------------------------- */
 .header__content .container {
     display: flex;
     align-items: center;
 }
+
 .header__title {
     font-family: var(--BebasNeue);
     font-weight: 400;
@@ -172,11 +199,13 @@ button {
     text-transform: uppercase;
     line-height: 123px;
 }
+
 .header__title img {
     position: absolute;
     right: 7%;
     top: 13%;
 }
+
 .header__txt {
     font-family: var(--OpenSans);
     font-weight: 600;
@@ -195,6 +224,7 @@ button {
     margin: 30px 0 120px;
     position: relative;
 }
+
 .brands .container {
     display: flex;
     justify-content: space-between;
@@ -205,17 +235,20 @@ button {
 .about {
     margin-bottom: 70px;
 }
+
 .about .container {
     display: flex;
     align-items: center;
     column-gap: 40px;
 }
+
 .about__desc h2 {
     font-weight: 500;
     font-size: 44px;
     line-height: 53px;
     margin-bottom: 65px;
 }
+
 .about__desc p {
     display: flex;
     align-items: center;
@@ -229,6 +262,7 @@ button {
 .courses {
     position: relative;
 }
+
 .courses::before {
     content: url(/image/courses-bg.png);
     position: absolute;
@@ -236,12 +270,14 @@ button {
     top: 0;
     z-index: -1;
 }
+
 .courses__cards {
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .courses__card {
     max-width: 319px;
     width: 100%;
@@ -251,20 +287,24 @@ button {
     transition: .5s;
     margin-bottom: 39px;
 }
+
 .courses__card img {
     width: 100%;
     height: 312px;
     object-fit: cover;
 }
+
 .courses__card-footer {
     padding: 29px 18px;
     font-family: var(--Poppins);
     position: relative;
 }
+
 .courses__card-title {
     font-weight: 500;
     font-size: 24px;
 }
+
 .courses__card-name {
     color: var(--text);
     font-weight: 500;
@@ -272,20 +312,24 @@ button {
     margin-top: 5px;
     line-height: 14px;
 }
+
 .courses__card-stars {
     color: #AB6729;
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 15px;
 }
+
 .courses__card-stars i {
     color: #E59819;
 }
+
 .courses__card-price {
     font-size: 30px;
     font-weight: 500;
     color: var(--price-color);
 }
+
 .courses__card-btn {
     width: 52px;
     height: 52px;
@@ -301,13 +345,16 @@ button {
     top: 40%;
     transition: .5s;
 }
+
 .courses__card:hover {
     box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.408);
     transform: scale(1.01);
 }
+
 .courses__card-btn:hover {
     background: var(--btn-hover);
 }
+
 .courses__card:hover .courses__card-btn {
     right: 10%;
 }
@@ -317,6 +364,7 @@ button {
     margin-bottom: 70px;
     position: relative;
 }
+
 .subscribe::before {
     content: url(/image/subscribe-bg.png);
     position: absolute;
@@ -324,6 +372,7 @@ button {
     bottom: 0;
     z-index: -1;
 }
+
 .subscribe::after {
     content: url(/image/header-shadow-2.png);
     position: absolute;
@@ -333,6 +382,7 @@ button {
     z-index: -1;
     /* height: 600px; */
 }
+
 .subscribe__title {
     font-family: var(--Inter);
     font-size: 60px;
@@ -340,6 +390,7 @@ button {
     text-transform: capitalize;
     text-align: center;
 }
+
 .subscribe__txt {
     font-family: var(--Inter);
     font-size: 18px;
@@ -347,6 +398,7 @@ button {
     font-weight: 700;
     text-align: center;
 }
+
 .subscribe__btns {
     max-width: 340px;
     width: 100%;
@@ -359,6 +411,7 @@ button {
     column-gap: 4px;
     padding: 7px 10px;
 }
+
 .subscribe__btn {
     width: 50%;
     font-size: 18px;
@@ -368,10 +421,12 @@ button {
     border-radius: 10px;
     transition: .5s;
 }
+
 .subscribe__btn.active {
     background: var(--btn-hover);
     color: var(--white);
 }
+
 .subscribe__card {
     max-width: 374px;
     width: 100%;
@@ -385,19 +440,24 @@ button {
     display: flex;
     flex-direction: column;
 }
+
 .subscribe__card:hover {
     background: var(--btn-hover);
     transform: scale(1.04);
 }
+
 .subscribe__card:hover .subscribe__card-title {
     color: var(--white);
 }
-.subscribe__card:hover  .subscribe__card-txt {
+
+.subscribe__card:hover .subscribe__card-txt {
     color: var(--white);
 }
+
 .subscribe__card:hover .subscribe__card-price {
     color: var(--white);
 }
+
 .subscribe__card::before {
     content: url(/image/circle.png);
     position: absolute;
@@ -406,10 +466,12 @@ button {
     left: 0;
     z-index: -1;
 }
+
 .subscribe__card-body {
     background: #F9FAFB;
     border-radius: 10px;
 }
+
 .subscribe__card-title {
     font-family: var(--Inter);
     font-weight: 600;
@@ -417,6 +479,7 @@ button {
     text-align: center;
     color: var(--title);
 }
+
 .subscribe__card-txt {
     font-size: 18px;
     font-family: var(--Inter);
@@ -425,10 +488,12 @@ button {
     text-align: center;
     margin: 10px 0 40px;
 }
+
 .subscribe__card-price {
     text-align: center;
     position: relative;
 }
+
 .subscribe__card-price .dollar {
     position: absolute;
     color: var(--text);
@@ -436,12 +501,14 @@ button {
     top: -15%;
     left: 36%;
 }
+
 .subscribe__card-price .price {
     font-family: var(--Inter);
     font-weight: 600;
     font-size: 50px;
     color: var(--title);
 }
+
 .subscribe__card-body {
     padding: 28px 37px 25px;
     display: flex;
@@ -449,6 +516,7 @@ button {
     justify-content: space-between;
     flex-grow: 1;
 }
+
 .subscribe__card-body p {
     display: flex;
     align-items: center;
@@ -458,6 +526,7 @@ button {
     font-weight: 500;
     font-size: 18px;
 }
+
 .subscribe__card-btn {
     max-width: 100%;
     font-family: var(--Inter);
@@ -468,6 +537,7 @@ button {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
     color: var(--btn);
 }
+
 .subscribe__card-btn:hover {
     color: var(--white);
 }
@@ -483,6 +553,7 @@ button {
     justify-content: space-between;
     margin-top: 24px;
 }
+
 .team__card {
     max-width: 350px;
     width: 100%;
@@ -490,10 +561,12 @@ button {
     border-radius: 14px;
     transition: .5s;
 }
+
 .team__card:hover {
     box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.231);
     transform: translateY(20px);
 }
+
 .team__card img {
     max-width: 299px;
     width: 100%;
@@ -503,21 +576,25 @@ button {
     border-radius: 14px;
     margin-bottom: 14px;
 }
+
 .team__card p {
     font-size: 20px;
     font-weight: 500;
 }
+
 .team__card span {
     color: var(--grey);
     font-weight: 500;
     margin: 5px 0 12px;
     display: block;
 }
+
 .team__card-links {
     display: flex;
     align-items: center;
     column-gap: 30px;
 }
+
 .team__card-links a i {
     width: 52px;
     height: 52px;
@@ -529,6 +606,7 @@ button {
     place-items: center;
     transition: .4s;
 }
+
 .team__card-links a:hover i {
     box-shadow: -3px 6px 9px 5px rgba(0, 0, 0, 0.356);
 }
@@ -540,23 +618,28 @@ button {
     padding: 40px 0;
     margin-top: 76px;
 }
+
 .footerr {
     border-top: 2px solid var(--white);
     border-bottom: 2px solid var(--white);
     padding: 19px 0 80px;
 }
+
 .footer .container {
     display: flex;
     justify-content: space-between;
 }
+
 .footer__list {
     color: var(--white);
 }
+
 .footer__list h3 {
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 25px;
 }
+
 .footer__list li a {
     color: var(--white);
     font-size: 18px;
@@ -566,27 +649,34 @@ button {
     margin-bottom: 12px;
     transition: .5s;
 }
+
 .footer__list li a:hover {
     padding-left: 10px;
     text-shadow: 2px 3px 3px green;
 }
+
 .footer__list:last-of-type li a:hover {
     padding-left: unset;
 }
+
 .footer__list h3:last-of-type {
     margin-bottom: 19px;
 }
+
 .footer__list:first-of-type ul li a:hover {
     padding-left: unset;
 }
+
 .footer__list ul {
     display: flex;
     align-items: center;
     column-gap: 30px;
 }
+
 .footer__list ul li a {
     font-size: 24px;
 }
+
 .footer__list p {
     max-width: 423px;
     width: 100%;
@@ -598,16 +688,19 @@ button {
 .videos {
     padding: 56px 0 47px;
 }
+
 .videos__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .select {
     background: var(--white);
     border-radius: 8px;
     padding: 9px 12px;
 }
+
 .select span {
     font-size: 18px;
     letter-spacing: 0.03em;
@@ -615,6 +708,7 @@ button {
     margin-right: 10px;
     font-family: var(--Poppins);
 }
+
 .select select {
     background: transparent;
     border: none;
@@ -623,6 +717,7 @@ button {
     font-size: 18px;
     font-family: var(--Poppins);
 }
+
 .search {
     background: var(--white);
     border-radius: 8px;
@@ -643,16 +738,19 @@ button {
     padding-left: 16px;
     outline: none;
 }
+
 .search i {
     font-size: 18px;
     padding: 14px 30px;
 }
+
 .videos__body {
     margin: 85px 0 56px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .videos__card {
     max-width: 435px;
     width: 100%;
@@ -663,14 +761,17 @@ button {
     cursor: pointer;
     transition: .5s;
 }
+
 .videos__card:hover {
     box-shadow: 4px 0px 15px rgba(158, 157, 157, 0.673);
     transform: scale(1.01);
 }
+
 .videos__card img {
     width: 100%;
     min-height: 312px;
 }
+
 .videos__card .videos__card-footer h3 {
     font-family: var(--Poppins);
     font-weight: 500;
@@ -678,6 +779,7 @@ button {
     margin-bottom: 9px;
     line-height: 14px;
 }
+
 .videos__card .videos__card-footer p {
     font-family: var(--Poppins);
     font-size: 15px;
@@ -685,12 +787,14 @@ button {
     line-height: 18px;
     margin-bottom: 11px;
 }
+
 .videos__card .videos__card-footer span {
     font-family: var(--Poppins);
     font-size: 15px;
     line-height: 18px;
     color: var(--text);
 }
+
 .videos__card-footer {
     padding: 20px 19px 17px;
 }
@@ -701,8 +805,9 @@ button {
 
 .ourCourses__title {
     font-size: 35px;
-    text-transform: capitalize;   
+    text-transform: capitalize;
 }
+
 .ourCourses__text {
     font-size: 18px;
     line-height: 28px;
@@ -711,12 +816,14 @@ button {
     max-width: 747px;
     width: 100%;
 }
+
 .ourCourses__body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 30px;
 }
+
 .ourCourses__card {
     box-shadow: 0px 0px 30px 10px #EAEAEE;
     border-radius: 5px;
@@ -726,14 +833,17 @@ button {
     background: var(--white);
     font-family: var(--Inter);
 }
+
 .ourCourses__card h3 {
     font-size: 18px;
     color: var(--title);
 }
+
 .ourCourses__card p {
     color: var(--text-2);
     margin: 13px 0;
 }
+
 .ourCourses__card button {
     font-size: 14px;
     padding: 10px 14px;
@@ -741,6 +851,7 @@ button {
     border-radius: 30px;
     transition: .5s;
 }
+
 .ourCourses__card button:hover {
     letter-spacing: 1px;
 }
@@ -769,6 +880,7 @@ button {
     padding-bottom: 72px;
     background: linear-gradient(90.15deg, rgba(125, 186, 40, 0.3) 3.98%, rgba(40, 116, 186, 0.3) 95.84%);
 }
+
 .database__content-desc h1 {
     font-family: var(--BebasNeue);
     font-size: 100px;
@@ -776,30 +888,37 @@ button {
     font-weight: 400;
     line-height: 103px;
 }
+
 .database__content-desc p {
     font-size: 20px;
     color: var(--white);
     margin-bottom: 15px;
 }
+
 .database__content-desc p i {
     color: var(--star);
     font-size: 22px;
 }
+
 .database__content-desc p i:last-of-type {
     color: var(--white);
     margin-right: 10px;
 }
+
 .pupils__comments {
     display: flex;
     align-items: center;
     color: var(--white);
 }
+
 .pupils__comments span:first-of-type {
     margin-right: 60px;
 }
+
 .pupils__comments i {
     margin-right: 4px;
 }
+
 .pupils__btn {
     display: block;
     text-align: center;
@@ -818,6 +937,7 @@ button {
     justify-content: center;
     padding: 100px 0 80px;
 }
+
 .advantages::before {
     content: '';
     position: absolute;
@@ -826,18 +946,21 @@ button {
     background: var(--text);
     bottom: 0;
 }
+
 .advantages .container {
     display: flex;
     justify-content: space-between;
     position: relative;
     margin-bottom: 50px;
 }
+
 .advantages__list h3 {
     font-weight: 500;
     font-size: 20px;
     color: var(--text);
     margin-bottom: 39px;
 }
+
 .advantages__item {
     display: flex;
     align-items: center;
@@ -847,9 +970,11 @@ button {
     color: var(--text);
     margin-bottom: 20px;
 }
+
 .m-s {
     margin-left: 35px;
 }
+
 .advantages__item i {
     width: 20px;
     height: 20px;
@@ -857,6 +982,7 @@ button {
     justify-content: center;
     color: var(--star);
 }
+
 .advantages__desc {
     max-width: 636px;
     width: 100%;
@@ -867,8 +993,140 @@ button {
     text-transform: uppercase;
     margin-bottom: 24px;
 }
+
 .advantages__desc p {
     line-height: 26px;
     color: var(--text);
     font-weight: 500;
 }
+
+/* ---------=====================Registration start ================--------*/
+
+.reg__content {
+    width: min(100%, 504px);
+    margin: 131px auto 257px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reg__content > h1 {
+    font-family: var(--Poppins);
+    margin-bottom: 70px;
+    font-size: 48px;
+    color: var(--title);
+    line-height: 72px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.reg__link {
+    display: flex;
+    column-gap: 13px;
+    margin-bottom: 42px;
+}
+
+.reg__link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 0;
+    column-gap: 13px;
+    width: 246px;
+    font-size: 12px;
+    font-family: var(--Poppins);
+    font-weight: 500;
+    line-height: 18px;
+    border: 1px solid #E8E8E8;
+    border-radius: 6px;
+    color: #494949;
+}
+
+.reg__inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+.reg__input {
+    width: 246px;
+}
+
+.reg__input > p,
+.reg__password > p{
+    font-family: var(--Poppins);
+    color: var(--title);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 14px;
+}
+
+.reg__inputs input,
+.reg__password input {
+    padding: 14px 0 14px 17px ;
+    border-radius: 10px;
+    border: 1px solid #000;
+    outline: none;
+    width: 100%;
+}
+
+.reg__checbox { 
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 37px;
+}
+
+.reg__checbox input {
+    width: 22px;
+    height: 22px;
+}
+
+.reg__checbox > label {
+    width: 363px;
+    margin-left: 21px;
+    font-family: var(--Poppins);
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--title);
+}
+
+.reg__btn {
+    max-width: 255px;
+    width: 100%;
+    padding: 30px 38px !important;
+}
+
+.reg__next {
+    display: flex;
+    margin-top: 33px;
+}
+
+.reg__next a {
+    color: #A4CF69;
+    font-family: var(--Poppins);
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.registration {
+    position: relative;
+}
+
+.registration::after {
+    position: absolute;
+    content: url(../image/BG\ \(1\).png);
+    bottom: -46%;
+    right: 0;
+    z-index: -1;
+}
+.registration::before {
+    position: absolute;
+    content: url(../image/BG.png);
+    bottom: -46%;
+    left: 0;
+    z-index: -1;
+}
+
+/* ---------=====================Registration end =================------- */
