@@ -184,6 +184,10 @@ button {
     background: #cdcbcb;
 }
 
+.registration__btn {
+    padding: 13px 11px;
+}
+
 /* ----------------------------------------------------- */
 .header__content .container {
     display: flex;
