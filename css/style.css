@@ -1005,6 +1005,25 @@ button {
 }
 
 /* ---------=====================Registration start ================--------*/
+.afters {
+    position: relative;
+}
+
+.afters::after {
+    position: absolute;
+    content: url(../image/BG\ \(1\).png);
+    bottom: -60% !important;
+    right: 0;
+    z-index: -1;
+}
+.afters::before {
+    position: absolute;
+    content: url(../image/BG.png);
+    bottom: -60% !important;
+    left: 0;
+    z-index: -1;
+}
+
 
 .reg__content {
     width: min(100%, 504px);
@@ -1100,6 +1119,7 @@ button {
     max-width: 255px;
     width: 100%;
     padding: 30px 38px !important;
+    text-align: center;
 }
 
 .reg__next {
@@ -1132,5 +1152,7 @@ button {
     left: 0;
     z-index: -1;
 }
+
+
 
 /* ---------=====================Registration end =================------- */
