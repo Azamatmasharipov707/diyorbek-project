@@ -19,7 +19,12 @@
     --price-color: #4B4A4A;
     --grey: #BAB7B7;
     --star: #ECD71E;
+<<<<<<< HEAD
     --logo-border: #253647;
+=======
+    --border: 1px solid #E8E8E8;
+    --title-2: #494949;
+>>>>>>> 9d3712d4cc8c9aba9be1a020057309347154fdf2
 }
 
 * {
@@ -53,6 +58,16 @@ button {
     padding: 0 15px;
 }
 
+<<<<<<< HEAD
+=======
+.reg__container,
+.login__content {
+    width: min(1049px, 100%);
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+>>>>>>> 9d3712d4cc8c9aba9be1a020057309347154fdf2
 .btn {
     max-width: 190px;
     width: 100%;
@@ -92,12 +107,13 @@ button {
 /* ================================== Header start =============================== */
 .header {
     position: relative;
+    /* overflow: hidden; */
 }
 
 .header::before {
     content: url(/image/header-shadow.png);
     position: absolute;
-    height: 700px;
+    height: 80vh;
     left: 0;
     top: 0;
     z-index: -1;
@@ -109,14 +125,24 @@ button {
     height: 700px;
     right: 0;
     top: 0;
+    bottom: 0;
     z-index: -1;
 }
 
+<<<<<<< HEAD
+=======
+.header.active::after {
+    display: none;
+}
+
+>>>>>>> 9d3712d4cc8c9aba9be1a020057309347154fdf2
 .nav {
     padding: 54px 0 12px;
 }
 
 .nav .container {
+.nav .container,
+.reg__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -151,6 +177,8 @@ button {
 }
 
 .registration {
+    max-width: 326px;
+    width: 100%;
     display: flex;
     align-items: center;
     column-gap: 10px;
@@ -167,12 +195,20 @@ button {
     color: var(--link);
     transition: .5s;
     font-weight: 500;
+    text-align: center;
 }
 
 .registration__btn1:hover {
     background: #cdcbcb;
 }
 
+<<<<<<< HEAD
+=======
+.registration__btn {
+    padding: 13px 11px;
+}
+
+>>>>>>> 9d3712d4cc8c9aba9be1a020057309347154fdf2
 /* ----------------------------------------------------- */
 .header__content .container {
     display: flex;
@@ -919,6 +955,7 @@ button {
     margin-top: 17px;
 }
 
+<<<<<<< HEAD
 /*  ======== ========= ========== ========== ===== Blog start ========= ======== ======= ==  */
 
 .blog__page-content {
@@ -1068,4 +1105,447 @@ button {
 
 .kategoriya-link {
     margin-bottom: 16px;
+=======
+/* ---------------------------------- Advantages start -------------------------------------- */
+.advantages {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 80px;
+}
+
+.advantages::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background: var(--text);
+    bottom: 0;
+}
+
+.advantages .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.advantages__list h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--text);
+    margin-bottom: 39px;
+}
+
+.advantages__item {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.m-s {
+    margin-left: 35px;
+}
+
+.advantages__item i {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--star);
+}
+
+.advantages__desc {
+    max-width: 636px;
+    width: 100%;
+}
+
+.advantages__desc h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.advantages__desc p {
+    line-height: 26px;
+    color: var(--text);
+    font-weight: 500;
+}
+
+/* ---------=====================Registration start ================--------*/
+.afters {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.afters::after {
+    position: absolute;
+    content: url(../image/BG\ \(1\).png);
+    bottom: 50px !important;
+    right: 0;
+    height: 500px;
+    z-index: -1;
+}
+.afters::before {
+    position: absolute;
+    content: url(../image/BG.png);
+    bottom: 45px !important;
+    left: -60px;
+    height: 500px;
+    z-index: -1;
+}
+
+
+.reg__content {
+    width: min(100%, 504px);
+    margin: 131px auto 257px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.reg__content > h1 {
+    font-family: var(--Poppins);
+    margin-bottom: 70px;
+    font-size: 48px;
+    color: var(--title);
+    line-height: 72px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.reg__link {
+    display: flex;
+    column-gap: 13px;
+    margin-bottom: 42px;
+}
+
+.reg__link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 0;
+    column-gap: 13px;
+    width: 246px;
+    font-size: 12px;
+    font-family: var(--Poppins);
+    font-weight: 500;
+    line-height: 18px;
+    border: 1px solid #E8E8E8;
+    border-radius: 6px;
+    color: #494949;
+}
+
+.reg__inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+.reg__input {
+    width: 246px;
+}
+
+.reg__input > p,
+.reg__password > p{
+    font-family: var(--Poppins);
+    color: var(--title);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 14px;
+}
+
+.reg__inputs input,
+.reg__password input {
+    padding: 14px 0 14px 17px ;
+    border-radius: 10px;
+    border: 1px solid #000;
+    outline: none;
+    width: 100%;
+}
+
+.reg__checbox { 
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 37px;
+}
+
+.reg__checbox input {
+    width: 22px;
+    height: 22px;
+}
+
+.reg__checbox > label {
+    width: 363px;
+    margin-left: 21px;
+    font-family: var(--Poppins);
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--title);
+}
+
+.reg__btn {
+    max-width: 255px;
+    width: 100%;
+    padding: 30px 38px !important;
+    text-align: center;
+}
+
+.reg__next {
+    display: flex;
+    margin-top: 33px;
+}
+
+.reg__next a {
+    color: #A4CF69;
+    font-family: var(--Poppins);
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.registrations {
+    position: relative;
+    overflow: hidden;
+}
+.registrations .container {
+    overflow: hidden;
+}
+
+.registrations::after {
+    position: absolute;
+    content: url(../image/BG\ \(1\).png);
+    bottom: 0%;
+    right: 0;
+    height: 500px;
+    z-index: -1;
+}
+.registrations::before {
+    position: absolute;
+    content: url(../image/BG.png);
+    bottom: 0%;
+    left: 0;
+    height: 500px;
+    z-index: -1;
+}
+.reg__footer {
+    margin: 0;
+}
+
+
+/* ---------=====================Registration end =================------- */
+
+/* ---------===================== Login start =====================--------- */
+
+.login {
+    position: relative;
+    overflow: hidden;
+}
+.login::before {
+    content: url(../image/BG.png);
+    position: absolute;
+    left: -35px;
+    bottom: 10% !important;
+    height: 500px;
+    z-index: -1;
+}
+.login::after {
+    content: url(../image/BG\ \(1\).png);
+    position: absolute;
+    right: -35px;
+    bottom: 10% !important;
+    height: 500px;
+    z-index: -1;
+}
+.login__content {
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 504px);
+    margin: 131px auto 257px;
+}
+.login__content-continue {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    margin-bottom: 42px;
+}
+.login__content-title {
+    font-weight: 700;
+    font-family: var(--Poppins);
+    font-size: 48px;
+    line-height: 72px;
+    color: var(--title);
+    padding-left: 21px;
+    margin-bottom: 70px;
+}
+.login__continue-item {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+    border: var(--border);
+    border-radius: 6px;
+    padding: 11px 10px 10px 30px;
+    margin-left: 21px;
+}
+.login__content-continue, .login__continue-item:nth-of-type(2) {
+    margin-left: 0;
+}
+.login__continue-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    width: 147px;
+    font-family: var(--Poppins);
+    color: var(--title-2);
+}
+.login__content-form {
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+    column-gap: 14px;
+    margin-bottom: 61px;
+}
+.login__form-name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: var(--Poppins);
+    color: #242323;
+    margin-bottom: 14px;
+}
+.login__form-reg {
+    background: var(--background);
+    border: var(--border);
+    border-radius: 10px;
+    font-weight: 400;
+    font-family: var(--Poppins);
+    font-size: 14px;
+    line-height: 28px;
+    color: #242323;
+    opacity: 0.4;
+    padding: 14px 65px 14px 17px;
+}
+.login__content {
+    width: min(100%, 504px);
+    margin: 131px auto 257px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.login__content-btn {
+    max-width: 288px;
+    width: 100%;
+    padding: 30px 127px 28px 94px;
+}
+.login__footer {
+    margin: 0;
+}
+
+/* ---------===================== Login end =====================--------- */
+
+/* ========================== Lesson progress start ============================= */
+
+.lessons__content {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 30px;
+}
+
+.lessons__aside {
+    max-width: 316px;
+    width: 100%;
+    background: var(--white);
+    border-radius: 28px;
+    padding: 0 10px;
+}
+
+.aside__dropdown {
+    height: 90px;
+    overflow: hidden;
+}
+
+.aside__dropdown.active {
+    height: max-content;
+    transition: 500ms;
+}
+
+.aside__dropdown.active .aside__dropdown-top i {
+    transform: rotate(0deg);
+}
+
+.aside__dropdown-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 19px 31px;
+}
+
+.aside__dropdown-top:hover i {
+    opacity: 1;
+}
+
+.aside__dropdown-top i {
+    opacity: 0;
+    transition: .5s;
+    transform: rotate(180deg);
+}
+
+.aside__dropdown p span {
+    font-weight: 500;
+    color: var(--text-2);
+}
+
+.aside__dropdown .aside__dropdown-top p span:first-of-type {
+    color: var(--black);
+}
+.aside__dropdown .aside__dropdown-top p span:last-of-type {
+    display: block;
+}
+
+.aside__dropdown .aside__dropdown-top p span {
+    font-size: 17px;
+}
+.aside__dropdown:first-of-type p span:first-of-type {
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+
+.aside__collection {
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--text-2);
+}
+
+.aside__collection i {
+    margin-right: 15px;
+}
+
+.aside__collection span:first-of-type {
+    margin-right: 20px;
+}
+
+
+
+.lessons__body {
+    width: 100%;
+}
+
+.lessons__videos {
+    width: 100%;
+    height: 490px;
+    object-fit: cover;
+>>>>>>> 9d3712d4cc8c9aba9be1a020057309347154fdf2
 }
