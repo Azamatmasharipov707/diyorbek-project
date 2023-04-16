@@ -17,6 +17,8 @@
     --price-color: #4B4A4A;
     --grey: #BAB7B7;
     --star: #ECD71E;
+    --border: 1px solid #E8E8E8;
+    --title-2: #494949;
 }
 
 * {
@@ -50,7 +52,8 @@ button {
     padding: 0 15px;
 }
 
-.reg__container {
+.reg__container,
+.login__content {
     width: min(1049px, 100%);
     padding: 0 15px;
     margin: 0 auto;
@@ -1171,6 +1174,114 @@ button {
 
 
 /* ---------=====================Registration end =================------- */
+
+/* ---------===================== Login start =====================--------- */
+
+.login {
+    position: relative;
+    overflow: hidden;
+}
+.login::before {
+    content: url(../image/BG.png);
+    position: absolute;
+    left: -35px;
+    bottom: 10% !important;
+    height: 500px;
+    z-index: -1;
+}
+.login::after {
+    content: url(../image/BG\ \(1\).png);
+    position: absolute;
+    right: -35px;
+    bottom: 10% !important;
+    height: 500px;
+    z-index: -1;
+}
+.login__content {
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 504px);
+    margin: 131px auto 257px;
+}
+.login__content-continue {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    margin-bottom: 42px;
+}
+.login__content-title {
+    font-weight: 700;
+    font-family: var(--Poppins);
+    font-size: 48px;
+    line-height: 72px;
+    color: var(--title);
+    padding-left: 21px;
+    margin-bottom: 70px;
+}
+.login__continue-item {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+    border: var(--border);
+    border-radius: 6px;
+    padding: 11px 10px 10px 30px;
+    margin-left: 21px;
+}
+.login__content-continue, .login__continue-item:nth-of-type(2) {
+    margin-left: 0;
+}
+.login__continue-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    width: 147px;
+    font-family: var(--Poppins);
+    color: var(--title-2);
+}
+.login__content-form {
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+    column-gap: 14px;
+    margin-bottom: 61px;
+}
+.login__form-name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: var(--Poppins);
+    color: #242323;
+    margin-bottom: 14px;
+}
+.login__form-reg {
+    background: var(--background);
+    border: var(--border);
+    border-radius: 10px;
+    font-weight: 400;
+    font-family: var(--Poppins);
+    font-size: 14px;
+    line-height: 28px;
+    color: #242323;
+    opacity: 0.4;
+    padding: 14px 65px 14px 17px;
+}
+.login__content {
+    width: min(100%, 504px);
+    margin: 131px auto 257px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.login__content-btn {
+    max-width: 288px;
+    width: 100%;
+    padding: 30px 127px 28px 94px;
+}
+.login__footer {
+    margin: 0;
+}
+
+/* ---------===================== Login end =====================--------- */
 
 /* ========================== Lesson progress start ============================= */
 
