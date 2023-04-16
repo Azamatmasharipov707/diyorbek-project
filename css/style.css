@@ -19,12 +19,10 @@
     --price-color: #4B4A4A;
     --grey: #BAB7B7;
     --star: #ECD71E;
-<<<<<<< HEAD
     --logo-border: #253647;
-=======
+
     --border: 1px solid #E8E8E8;
     --title-2: #494949;
->>>>>>> 9d3712d4cc8c9aba9be1a020057309347154fdf2
 }
 
 * {
@@ -58,8 +56,6 @@ button {
     padding: 0 15px;
 }
 
-<<<<<<< HEAD
-=======
 .reg__container,
 .login__content {
     width: min(1049px, 100%);
@@ -67,7 +63,6 @@ button {
     margin: 0 auto;
 }
 
->>>>>>> 9d3712d4cc8c9aba9be1a020057309347154fdf2
 .btn {
     max-width: 190px;
     width: 100%;
@@ -129,18 +124,14 @@ button {
     z-index: -1;
 }
 
-<<<<<<< HEAD
-=======
 .header.active::after {
     display: none;
 }
 
->>>>>>> 9d3712d4cc8c9aba9be1a020057309347154fdf2
 .nav {
     padding: 54px 0 12px;
 }
 
-.nav .container {
 .nav .container,
 .reg__container {
     display: flex;
@@ -202,13 +193,9 @@ button {
     background: #cdcbcb;
 }
 
-<<<<<<< HEAD
-=======
 .registration__btn {
     padding: 13px 11px;
 }
-
->>>>>>> 9d3712d4cc8c9aba9be1a020057309347154fdf2
 /* ----------------------------------------------------- */
 .header__content .container {
     display: flex;
@@ -955,157 +942,6 @@ button {
     margin-top: 17px;
 }
 
-<<<<<<< HEAD
-/*  ======== ========= ========== ========== ===== Blog start ========= ======== ======= ==  */
-
-.blog__page-content {
-    margin-top: 140px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.blog__page-content::before {
-    content: url(/image/header-shadow.png);
-    position: absolute;
-    height: 700px;
-    left: 0;
-    top: 0;
-    z-index: -1;
-}
-
-.blog__page-content::after {
-    content: url(/image/header-shadow-2.png);
-    position: absolute;
-    height: 700px;
-    right: 0;
-    top: 500px;
-    z-index: -1;
-}
-
-.blog {
-    display: flex;
-    position: relative;
-}
-
-
-.blog__card {
-    background-color: var(--btn);
-    font-family: var(--OpenSans);
-    max-width: 480px;
-    max-height: 800px;
-    width: 100%;
-}
-
-.blog__card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 85px;
-}
-
-
-.blog__img-logo {
-    border: 3px solid var(--logo-border);
-    border-radius: 50%;
-    padding: 4px;
-    display: flex;
-    align-items: center;
-}
-
-.blog__card-name {
-    text-align: center;
-    font-family: var(--Inter);
-    font-weight: 500;
-    font-size: 29px;
-    line-height: 30px;
-    margin-bottom: 105px;
-}
-
-.blog__link {
-    color: var(--white);
-}
-
-.blog__item {
-    margin-bottom: 25px;
-    font-weight: 400;
-    font-size: 25px;
-    transition: 400ms;
-}
-
-.blog__item:hover {
-    margin-left: 8px;
-    transition: 400ms;
-}
-
-.blog__list {
-    margin-bottom: 180px;
-}
-
-.blog__content-top {
-    display: flex;
-}
-
-.blog__content {
-    padding: 0 51px 51px 51px;
-    width: 100%;
-}
-
-.blog__content-top {
-    margin-bottom: 55px;
-}
-
-.blog__content-top-title {
-    font-family: var(--Poppins);
-    font-weight: 500;
-    font-size: 41.52px;
-    padding-right: 70px;
-    color: var(--text-3);
-}
-
-.blog__content-top-end {
-    font-family: var(--OpenSans);
-    font-weight: 400;
-    font-size: 13px;
-    color: var(--text-4);
-}
-
-.fkirlar {
-    color: #999999;
-    text-align: end;
-}
-
-.blog__content-center {
-    font-family: var(--Inter);
-    font-weight: 500;
-    font-size: 17.6px;
-    color: #333333;
-    line-height: 32px;
-    padding-bottom: 54px;
-}
-
-.blog__content-bottom span {
-    color: #00ADF2;
-}
-
-/* --------------- --- kategoriya start --------------------- */
-
-.kategoriya {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-}
-
-.kategoriya-title {
-    font-family: var(--OpenSans);
-    padding-bottom: 50px;
-    font-weight: 800;
-    font-size: 20px;
-}
-
-.kategoriya-link {
-    margin-bottom: 16px;
-=======
 /* ---------------------------------- Advantages start -------------------------------------- */
 .advantages {
     position: relative;
@@ -1547,5 +1383,4 @@ button {
     width: 100%;
     height: 490px;
     object-fit: cover;
->>>>>>> 9d3712d4cc8c9aba9be1a020057309347154fdf2
 }
