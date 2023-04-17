@@ -50,12 +50,6 @@ button {
     padding: 0 15px;
 }
 
-.reg__container {
-    width: min(1049px, 100%);
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
 .btn {
     max-width: 190px;
     width: 100%;
@@ -125,8 +119,7 @@ button {
     padding: 54px 0 12px;
 }
 
-.nav .container,
-.reg__container {
+.nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1021,6 +1014,7 @@ button {
     height: 500px;
     z-index: -1;
 }
+
 .afters::before {
     position: absolute;
     content: url(../image/BG.png);
@@ -1039,7 +1033,7 @@ button {
     overflow: hidden;
 }
 
-.reg__content > h1 {
+.reg__content>h1 {
     font-family: var(--Poppins);
     margin-bottom: 70px;
     font-size: 48px;
@@ -1082,8 +1076,8 @@ button {
     width: 246px;
 }
 
-.reg__input > p,
-.reg__password > p{
+.reg__input>p,
+.reg__password>p {
     font-family: var(--Poppins);
     color: var(--title);
     font-weight: 400;
@@ -1094,14 +1088,14 @@ button {
 
 .reg__inputs input,
 .reg__password input {
-    padding: 14px 0 14px 17px ;
+    padding: 14px 0 14px 17px;
     border-radius: 10px;
     border: 1px solid #000;
     outline: none;
     width: 100%;
 }
 
-.reg__checbox { 
+.reg__checbox {
     display: flex;
     align-items: center;
     margin-top: 28px;
@@ -1113,7 +1107,7 @@ button {
     height: 22px;
 }
 
-.reg__checbox > label {
+.reg__checbox>label {
     width: 363px;
     margin-left: 21px;
     font-family: var(--Poppins);
@@ -1145,6 +1139,7 @@ button {
     position: relative;
     overflow: hidden;
 }
+
 .registrations .container {
     overflow: hidden;
 }
@@ -1157,6 +1152,7 @@ button {
     height: 500px;
     z-index: -1;
 }
+
 .registrations::before {
     position: absolute;
     content: url(../image/BG.png);
@@ -1165,9 +1161,11 @@ button {
     height: 500px;
     z-index: -1;
 }
+
 .reg__footer {
     margin: 0;
 }
+
 
 
 /* ---------=====================Registration end =================------- */
@@ -1227,6 +1225,7 @@ button {
 .aside__dropdown .aside__dropdown-top p span:first-of-type {
     color: var(--black);
 }
+
 .aside__dropdown .aside__dropdown-top p span:last-of-type {
     display: block;
 }
@@ -1234,6 +1233,7 @@ button {
 .aside__dropdown .aside__dropdown-top p span {
     font-size: 17px;
 }
+
 .aside__dropdown:first-of-type p span:first-of-type {
     display: block;
     font-size: 22px;
@@ -1259,7 +1259,7 @@ button {
     margin-right: 20px;
 }
 
-
+/* --------------------------============================ */
 
 .lessons__body {
     width: 100%;
@@ -1269,4 +1269,237 @@ button {
     width: 100%;
     height: 490px;
     object-fit: cover;
+}
+
+.lesson__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 47px;
+}
+
+.lesson__control a {
+    text-align: center;
+}
+
+.lesson__cards {
+    margin-top: 74px;
+}
+
+.lesson__card a {
+    padding: 22px 41px;
+    color: var(--black);
+    font-size: 20px;
+}
+
+.lesson__card a:focus {
+    background: #FBFBFB;
+    box-shadow: 4px 1px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.lesson__card {
+    margin-bottom: 45px;
+}
+
+.lesson__img {
+   width: 600px;
+   height: 600px;
+    display: none;   
+}
+
+.lesson__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ----------------=========================== */
+
+.lesson__comment {
+    display: grid;
+    row-gap: 20px;
+    display: none;
+}
+
+.lesson__comment-post {
+    background: #FBFBFB;
+    box-shadow: 4px 1px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
+.lesson__comment-post {
+    display: flex;
+    flex-direction: column;
+    padding: 47px 56px;
+
+}
+
+.lesson__comment-post h3 {
+    font-size: 20px;
+    font-family: var(--Inter);
+    font-weight: 600;
+    margin-bottom: 19px;
+    color: var(--title);
+}
+
+.lesson__comment-post input {
+    padding: 41px 31px;
+    background: #D9D9D9;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    margin-bottom: 45px;
+}
+
+.lesson__comment-post a {
+    text-align: center;
+}
+
+.lesson__comment-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lesson__comment-cards {
+    padding: 15px 27px 43px;
+    background: #FBFBFB;
+    box-shadow: 4px 4px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+}
+
+.lesson__comment-card h3 {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 130%;
+    text-align: justify;
+    color: #666262;
+    margin-bottom: 9px;
+}
+
+.lesson__comment-card p {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: justify;
+    color: #7A889D;
+
+}
+
+.lesson__comment-card-star {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lesston__comment-star i {
+    color: #A4CF69;
+}
+
+.lesston__comment-star i:nth-child(5) {
+    color: #EDEDED;
+}
+
+.lesson__comment-card-star span {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 8px;
+    text-align: justify;
+    color: #7A889D;
+    margin-top: 8px;
+}
+
+/* ------------------================== */
+
+.lesson__comment-retings {
+    display: none;
+    padding: 41px 74px 57px;
+    background: #FBFBFB;
+    box-shadow: 4px 1px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
+.lesson__comment-reting span {
+    display: block;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+    color: #7A889D;
+}
+
+.lesson__comment-reting-star {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.lesson__comment-reting-star i {
+    color: #A4CF69;
+    text-align: center;
+    font-size: 20px;
+}
+
+.lesson__comment-reting h3 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--title);
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.lesson__comment-reting h4 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--title);
+    margin-bottom: 6px;
+}
+
+.lesson__comment-renge {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.lesson__comment-renge div {
+    position: relative;
+    width: min(675px, 100%);
+    height: 16px;
+    background: #E8E8E8;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+.lesson__comment-renge div::after {
+    position: absolute;
+    content: '69%';
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 10px;
+    padding-left: 20px;
+    background: #A4CF69;
+}
+
+.lesson__comment-renge i {
+    color: #A4CF69;
+}
+
+.lesson__comment-renge .renge1,
+.lesson__comment-reting-star i:nth-child(5) {
+    color: #EDEDED;
+
+}
+
+.active {
+    display:unset !important;
 }
