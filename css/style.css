@@ -14,9 +14,15 @@
     --text-2: #666789;
     --white: #fff;
     --black: #000;
+    --text-3: #1D1B1B;
+    --text-4: #555555;
     --price-color: #4B4A4A;
     --grey: #BAB7B7;
     --star: #ECD71E;
+    --logo-border: #253647;
+
+    --border: 1px solid #E8E8E8;
+    --title-2: #494949;
 }
 
 * {
@@ -48,8 +54,19 @@ button {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    /* overflow: hidden; */
 }
 
+<<<<<<< HEAD
+=======
+.reg__container,
+.login__content {
+    width: min(1049px, 100%);
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+>>>>>>> 065dbe8c79809fb22cd1c14c92b44fc43ce041d3
 .btn {
     max-width: 190px;
     width: 100%;
@@ -182,7 +199,6 @@ button {
 .registration__btn {
     padding: 13px 11px;
 }
-
 /* ----------------------------------------------------- */
 .header__content .container {
     display: flex;
@@ -1170,6 +1186,114 @@ button {
 
 /* ---------=====================Registration end =================------- */
 
+/* ---------===================== Login start =====================--------- */
+
+.login {
+    position: relative;
+    overflow: hidden;
+}
+.login::before {
+    content: url(../image/BG.png);
+    position: absolute;
+    left: -35px;
+    bottom: 10% !important;
+    height: 500px;
+    z-index: -1;
+}
+.login::after {
+    content: url(../image/BG\ \(1\).png);
+    position: absolute;
+    right: -35px;
+    bottom: 10% !important;
+    height: 500px;
+    z-index: -1;
+}
+.login__content {
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 504px);
+    margin: 131px auto 257px;
+}
+.login__content-continue {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    margin-bottom: 42px;
+}
+.login__content-title {
+    font-weight: 700;
+    font-family: var(--Poppins);
+    font-size: 48px;
+    line-height: 72px;
+    color: var(--title);
+    padding-left: 21px;
+    margin-bottom: 70px;
+}
+.login__continue-item {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+    border: var(--border);
+    border-radius: 6px;
+    padding: 11px 10px 10px 30px;
+    margin-left: 21px;
+}
+.login__content-continue, .login__continue-item:nth-of-type(2) {
+    margin-left: 0;
+}
+.login__continue-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    width: 147px;
+    font-family: var(--Poppins);
+    color: var(--title-2);
+}
+.login__content-form {
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+    column-gap: 14px;
+    margin-bottom: 61px;
+}
+.login__form-name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: var(--Poppins);
+    color: #242323;
+    margin-bottom: 14px;
+}
+.login__form-reg {
+    background: var(--background);
+    border: var(--border);
+    border-radius: 10px;
+    font-weight: 400;
+    font-family: var(--Poppins);
+    font-size: 14px;
+    line-height: 28px;
+    color: #242323;
+    opacity: 0.4;
+    padding: 14px 65px 14px 17px;
+}
+.login__content {
+    width: min(100%, 504px);
+    margin: 131px auto 257px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.login__content-btn {
+    max-width: 288px;
+    width: 100%;
+    padding: 30px 127px 28px 94px;
+}
+.login__footer {
+    margin: 0;
+}
+
+/* ---------===================== Login end =====================--------- */
+
 /* ========================== Lesson progress start ============================= */
 
 .lessons__content {
@@ -1183,12 +1307,16 @@ button {
     width: 100%;
     background: var(--white);
     border-radius: 28px;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 
 .aside__dropdown {
     height: 90px;
     overflow: hidden;
+}
+
+.aside__dropdown:hover {
+    background: #444;
 }
 
 .aside__dropdown.active {
@@ -1501,5 +1629,5 @@ button {
 }
 
 .active {
-    display:unset !important;
+    display:unset;
 }
