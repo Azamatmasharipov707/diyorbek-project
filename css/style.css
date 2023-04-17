@@ -46,7 +46,7 @@ button {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .btn {
     max-width: 190px;
