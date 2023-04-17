@@ -1300,12 +1300,16 @@ button {
     width: 100%;
     background: var(--white);
     border-radius: 28px;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 
 .aside__dropdown {
     height: 90px;
     overflow: hidden;
+}
+
+.aside__dropdown:hover {
+    background: #444;
 }
 
 .aside__dropdown.active {
