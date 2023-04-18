@@ -57,16 +57,6 @@ button {
     /* overflow: hidden; */
 }
 
-<<<<<<< HEAD
-=======
-.reg__container,
-.login__content {
-    width: min(1049px, 100%);
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
->>>>>>> 065dbe8c79809fb22cd1c14c92b44fc43ce041d3
 .btn {
     max-width: 190px;
     width: 100%;
@@ -1431,8 +1421,8 @@ button {
 }
 
 .lesson__img {
-   width: 600px;
-   height: 600px;
+  max-width: 600px;
+   max-height: 600px;
     display: none;   
 }
 
@@ -1443,6 +1433,7 @@ button {
 }
 
 /* ----------------=========================== */
+
 
 .lesson__comment {
     display: grid;
