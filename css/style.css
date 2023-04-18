@@ -117,7 +117,7 @@ button {
 
 .header::after {
     content: url(/image/header-shadow-2.png);
-    position: absolute;
+    position: fixed;
     height: 700px;
     right: 0;
     top: 0;
@@ -196,6 +196,7 @@ button {
 .registration__btn {
     padding: 13px 11px;
 }
+
 /* ----------------------------------------------------- */
 .header__content .container {
     display: flex;
@@ -1189,6 +1190,7 @@ button {
     position: relative;
     overflow: hidden;
 }
+
 .login::before {
     content: url(../image/BG.png);
     position: absolute;
@@ -1197,6 +1199,7 @@ button {
     height: 500px;
     z-index: -1;
 }
+
 .login::after {
     content: url(../image/BG\ \(1\).png);
     position: absolute;
@@ -1205,18 +1208,21 @@ button {
     height: 500px;
     z-index: -1;
 }
+
 .login__content {
     display: flex;
     flex-direction: column;
     width: min(100%, 504px);
     margin: 131px auto 257px;
 }
+
 .login__content-continue {
     display: flex;
     align-items: center;
     column-gap: 14px;
     margin-bottom: 42px;
 }
+
 .login__content-title {
     font-weight: 700;
     font-family: var(--Poppins);
@@ -1226,6 +1232,7 @@ button {
     padding-left: 21px;
     margin-bottom: 70px;
 }
+
 .login__continue-item {
     display: flex;
     align-items: center;
@@ -1235,9 +1242,12 @@ button {
     padding: 11px 10px 10px 30px;
     margin-left: 21px;
 }
-.login__content-continue, .login__continue-item:nth-of-type(2) {
+
+.login__content-continue,
+.login__continue-item:nth-of-type(2) {
     margin-left: 0;
 }
+
 .login__continue-link {
     font-weight: 500;
     font-size: 12px;
@@ -1246,6 +1256,7 @@ button {
     font-family: var(--Poppins);
     color: var(--title-2);
 }
+
 .login__content-form {
     display: flex;
     align-items: center;
@@ -1253,6 +1264,7 @@ button {
     column-gap: 14px;
     margin-bottom: 61px;
 }
+
 .login__form-name {
     font-weight: 400;
     font-size: 14px;
@@ -1261,6 +1273,7 @@ button {
     color: #242323;
     margin-bottom: 14px;
 }
+
 .login__form-reg {
     background: var(--background);
     border: var(--border);
@@ -1273,6 +1286,7 @@ button {
     opacity: 0.4;
     padding: 14px 65px 14px 17px;
 }
+
 .login__content {
     width: min(100%, 504px);
     margin: 131px auto 257px;
@@ -1280,11 +1294,13 @@ button {
     flex-direction: column;
     overflow: hidden;
 }
+
 .login__content-btn {
     max-width: 288px;
     width: 100%;
     padding: 30px 127px 28px 94px;
 }
+
 .login__footer {
     margin: 0;
 }
@@ -1417,224 +1433,52 @@ button {
     text-align: center;
 }
 
-.lesson__cards {
-    margin-top: 74px;
+.lesson__btns {
+    margin: 70px 0 46px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
 }
 
-.lesson__card a {
-    padding: 22px 41px;
-    color: var(--black);
+.lesson__btn {
+    padding: 23px 40px;
     font-size: 20px;
+    font-weight: 600;
 }
 
-.lesson__card a:focus {
+.lesson__btn.active {
     background: #FBFBFB;
     box-shadow: 4px 1px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 }
 
-.lesson__card {
-    margin-bottom: 45px;
-}
-
-.lesson__img {
-   width: 600px;
-   height: 600px;
-    display: none;   
-}
-
-.lesson__img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-/* ----------------=========================== */
-
-.lesson__comment {
-    display: grid;
-    row-gap: 20px;
+.lesson__content {
     display: none;
 }
 
-.lesson__comment-post {
+.lesson__content.active {
+    display: block;
+}
+
+.lesson__post {
     background: #FBFBFB;
     box-shadow: 4px 1px 25px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
-}
-
-.lesson__comment-post {
+    padding: 47px 44px 30px;
     display: flex;
     flex-direction: column;
-    padding: 47px 56px;
-
 }
 
-.lesson__comment-post h3 {
-    font-size: 20px;
-    font-family: var(--Inter);
-    font-weight: 600;
-    margin-bottom: 19px;
-    color: var(--title);
-}
-
-.lesson__comment-post input {
-    padding: 41px 31px;
-    background: #D9D9D9;
+.lesson__post input {
+    padding: 42px 0 42px 31px;
     border-radius: 13px;
     border: none;
     outline: none;
-    margin-bottom: 45px;
-}
-
-.lesson__comment-post a {
-    text-align: center;
-}
-
-.lesson__comment-cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.lesson__comment-cards {
-    padding: 15px 27px 43px;
-    background: #FBFBFB;
-    box-shadow: 4px 4px 35px rgba(0, 0, 0, 0.08);
-    border-radius: 7px;
-}
-
-.lesson__comment-card h3 {
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 130%;
-    text-align: justify;
-    color: #666262;
-    margin-bottom: 9px;
-}
-
-.lesson__comment-card p {
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 130%;
-    text-align: justify;
-    color: #7A889D;
-
-}
-
-.lesson__comment-card-star {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.lesston__comment-star i {
-    color: #A4CF69;
-}
-
-.lesston__comment-star i:nth-child(5) {
-    color: #EDEDED;
-}
-
-.lesson__comment-card-star span {
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 8px;
-    text-align: justify;
-    color: #7A889D;
-    margin-top: 8px;
-}
-
-/* ------------------================== */
-
-.lesson__comment-retings {
-    display: none;
-    padding: 41px 74px 57px;
-    background: #FBFBFB;
-    box-shadow: 4px 1px 25px rgba(0, 0, 0, 0.08);
-    border-radius: 10px;
-}
-
-.lesson__comment-reting span {
-    display: block;
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 60px;
-    text-align: center;
-    color: #7A889D;
-}
-
-.lesson__comment-reting-star {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.lesson__comment-reting-star i {
-    color: #A4CF69;
-    text-align: center;
+    background: #D9D9D9;
     font-size: 20px;
+    margin: 19px 0 45px;
 }
 
-.lesson__comment-reting h3 {
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 24px;
-    color: var(--title);
-    text-align: center;
-    margin-bottom: 34px;
-}
-
-.lesson__comment-reting h4 {
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 15px;
-    color: var(--title);
-    margin-bottom: 6px;
-}
-
-.lesson__comment-renge {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.lesson__comment-renge div {
-    position: relative;
-    width: min(675px, 100%);
-    height: 16px;
-    background: #E8E8E8;
-    border-radius: 5px;
-    margin-right: 50px;
-}
-
-.lesson__comment-renge div::after {
-    position: absolute;
-    content: '69%';
-    display: flex;
-    align-items: center;
-    width: 85%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 10px;
-    padding-left: 20px;
-    background: #A4CF69;
-}
-
-.lesson__comment-renge i {
-    color: #A4CF69;
-}
-
-.lesson__comment-renge .renge1,
-.lesson__comment-reting-star i:nth-child(5) {
-    color: #EDEDED;
-
-}
-
-.active {
-    display:unset;
+.lesson__post input::placeholder {
+    color: var(--black);
 }
