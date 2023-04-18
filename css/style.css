@@ -57,8 +57,6 @@ button {
     /* overflow: hidden; */
 }
 
-<<<<<<< HEAD
-=======
 .reg__container,
 .login__content {
     width: min(1049px, 100%);
@@ -66,7 +64,6 @@ button {
     margin: 0 auto;
 }
 
->>>>>>> 065dbe8c79809fb22cd1c14c92b44fc43ce041d3
 .btn {
     max-width: 190px;
     width: 100%;
@@ -1296,6 +1293,10 @@ button {
 
 /* ========================== Lesson progress start ============================= */
 
+.lessons {
+    width: 100%;
+}
+
 .lessons__content {
     display: flex;
     align-items: flex-start;
@@ -1305,9 +1306,10 @@ button {
 .lessons__aside {
     max-width: 316px;
     width: 100%;
-    background: var(--white);
+    background: #F8F9F9;
     border-radius: 28px;
     /* padding: 0 10px; */
+    overflow: hidden;
 }
 
 .aside__dropdown {
@@ -1316,7 +1318,7 @@ button {
 }
 
 .aside__dropdown:hover {
-    background: #444;
+    background: #edebeb62;
 }
 
 .aside__dropdown.active {
@@ -1326,6 +1328,7 @@ button {
 
 .aside__dropdown.active .aside__dropdown-top i {
     transform: rotate(0deg);
+    opacity: 1;
 }
 
 .aside__dropdown-top {
@@ -1377,6 +1380,10 @@ button {
     font-weight: 500;
     font-size: 15px;
     color: var(--text-2);
+}
+
+.aside__collection:hover {
+    background: var(--white);
 }
 
 .aside__collection i {
