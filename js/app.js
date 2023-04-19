@@ -31,17 +31,6 @@ let lessonContent = document.querySelectorAll('.lesson__content');
 console.log(lessonContent)
 
 
-<<<<<<< HEAD
-
-topic.addEventListener('click',function() {
-    lessonComment.classList.remove('active')
-    lessonCommentRetings.classList.remove('active')
-    lessonImg.classList.add('active')
-})
-
-
-// ====================================
-=======
 for(let i = 0; i < lessonBtn.length; i++) {
     lessonBtn[i].addEventListener('click', ()=> {
         for (let k = 0; k < lessonBtn.length; k++) {
@@ -52,4 +41,3 @@ for(let i = 0; i < lessonBtn.length; i++) {
         lessonContent[i].classList.add('active')
     })
 }
->>>>>>> e5087723606df8006da37e3b820ce8afba3ad09b
