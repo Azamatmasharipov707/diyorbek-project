@@ -1530,3 +1530,45 @@ button {
     font-size: 60px;
     color: #7A889D;
 }
+
+.evaluation__top p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.evaluation__body {
+    width: 80%;
+}
+
+.evaluation__body h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.evaluation__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+    margin-bottom: 20px;
+}
+
+.evaluation__content button {
+    display: flex;
+}
+
+.evaluation__line {
+    background: #E8E8E8;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.evaluation__line p {
+    background: var(--btn);
+    padding: 2px 0 2px 18px;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 12px;
+    color: var(--white);
+    font-weight: 600;
+}
