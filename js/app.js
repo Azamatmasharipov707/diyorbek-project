@@ -31,8 +31,8 @@ let lessonContent = document.querySelectorAll('.lesson__content');
 console.log(lessonContent)
 
 
-for(let i = 0; i < lessonBtn.length; i++) {
-    lessonBtn[i].addEventListener('click', ()=> {
+for (let i = 0; i < lessonBtn.length; i++) {
+    lessonBtn[i].addEventListener('click', () => {
         for (let k = 0; k < lessonBtn.length; k++) {
             lessonBtn[k].classList.remove('active')
             lessonContent[k].classList.remove('active')
@@ -41,3 +41,55 @@ for(let i = 0; i < lessonBtn.length; i++) {
         lessonContent[i].classList.add('active')
     })
 }
+
+
+
+/* ----------------------------------------- Circle ------------------------------ */
+
+let circularProgress = document.querySelector(".circular-progress"),
+    progressValue = document.querySelector(".progress-value");
+
+let progressStartValue = 0,
+    progressEndValue = 90,
+    speed = 20;
+
+let progress = setInterval(() => {
+    progressStartValue++;
+
+    progressValue.textContent = `${progressStartValue}%`
+    circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
+
+    if (progressStartValue == progressEndValue) {
+        clearInterval(progress);
+    }
+}, speed);
+
+// let circularProgress = document.querySelectorAll(".circular-progress"),
+//     progressValue = document.querySelectorAll(".progress-value b");
+
+// let progressStartValue = 0,
+//     progressEndValue = 0,
+//     speed = 20;
+
+//     progressValue.forEach(e => {
+//         console.log(+e.innerHTML)
+//         progressEndValue = +e.innerHTML
+//     });
+
+//     // console.log(progressValue.innerHTML)
+
+// let progress = setInterval(() => {
+//     progressStartValue++;
+
+//     for (let i = 0; i < circularProgress.length; i++) {
+//         progressValue[i].textContent = `${progressStartValue}%`
+//         circularProgress[i].style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
+//         if (progressStartValue == progressEndValue) {
+//             clearInterval(progress);
+//         }
+//     }
+//     // progressValue.textContent = `${progressStartValue}%`
+//     // circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
+
+// }, speed);
+
