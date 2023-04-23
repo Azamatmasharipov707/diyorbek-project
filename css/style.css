@@ -1630,3 +1630,92 @@ button {
     margin-top: 10px;
     color: #606060;
 }
+/* =================================Tolov start=========================== */
+#tolov {
+    margin-bottom: 30px;
+}
+#tolov__info {
+    overflow: hidden;
+    position: relative;
+}
+#tolov__info::before {
+    content: url(../image/BG\ \(1\).png);
+    position: absolute;
+    right: 0;
+    bottom: 10% !important;
+    height: 500px;
+    z-index: -1;
+}
+/* #tolov__info {
+    background: url(../image/BG\ \(1\).png) right bottom no-repeat;
+} */
+.tolov_desc {
+    background: linear-gradient(180deg, #A4CF69 0%, rgba(164, 207, 105, 0) 146.82%);
+}
+.section__image {
+    position: absolute;
+    right: 0;
+}
+.tolov__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 106px 0;
+}
+.tolov__desc-title {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+.tolov__desc-text {
+    max-width: 741.33px;
+    color: var(--white);
+    font-weight: 200;
+    font-size: 34px;
+    line-height: 49px;
+    text-align: center;
+}
+.tolov__info-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 130px;
+}
+.tolov__info-left {
+    max-width: 550px;
+}
+.tolov__info-left h4 {
+    font-weight: 700;
+    font-size: 27px;
+    color: #212338;
+    margin-bottom: 38px;
+}
+.tolov__info-left p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 38px;
+}
+.tolov__info-left h5 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 38px;
+}
+.tolov__right-border { 
+    width: 458px;
+    height: 20px;
+    background: linear-gradient(180deg, #7DBA28 0%, rgba(255, 255, 255, 0) 217.5%);
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 37px;
+}
+.tolov__info-list li {
+    margin-bottom: 22px;
+    color: #232323;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
