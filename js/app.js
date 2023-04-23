@@ -46,8 +46,8 @@ for (let i = 0; i < lessonBtn.length; i++) {
 
 /* ----------------------------------------- Circle ------------------------------ */
 
-let circularProgress = document.querySelector(".circular-progress"),
-    progressValue = document.querySelector(".progress-value");
+let circularProgress = document.querySelectorAll(".circular-progress"),
+    progressValue = document.querySelectorAll(".progress-value");
 
 let progressStartValue = 0,
     progressEndValue = 90,
@@ -56,40 +56,13 @@ let progressStartValue = 0,
 let progress = setInterval(() => {
     progressStartValue++;
 
-    progressValue.textContent = `${progressStartValue}%`
-    circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
+    for (let i = 0; i < progressValue.length; i++) {
+        progressValue[i].textContent = `${progressStartValue}%`
+        circularProgress[i].style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
+    }
+
 
     if (progressStartValue == progressEndValue) {
         clearInterval(progress);
     }
 }, speed);
-
-// let circularProgress = document.querySelectorAll(".circular-progress"),
-//     progressValue = document.querySelectorAll(".progress-value b");
-
-// let progressStartValue = 0,
-//     progressEndValue = 0,
-//     speed = 20;
-
-//     progressValue.forEach(e => {
-//         console.log(+e.innerHTML)
-//         progressEndValue = +e.innerHTML
-//     });
-
-//     // console.log(progressValue.innerHTML)
-
-// let progress = setInterval(() => {
-//     progressStartValue++;
-
-//     for (let i = 0; i < circularProgress.length; i++) {
-//         progressValue[i].textContent = `${progressStartValue}%`
-//         circularProgress[i].style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
-//         if (progressStartValue == progressEndValue) {
-//             clearInterval(progress);
-//         }
-//     }
-//     // progressValue.textContent = `${progressStartValue}%`
-//     // circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
-
-// }, speed);
-
