@@ -30,6 +30,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 a {
@@ -42,6 +43,7 @@ ul {
 
 body {
     font-family: var(--Inter);
+    overflow-x: hidden;
 }
 
 button {
@@ -1776,3 +1778,4 @@ button {
     font-weight: 400;
     display: block;
 }
+
