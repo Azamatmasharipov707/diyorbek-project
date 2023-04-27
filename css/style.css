@@ -1302,6 +1302,69 @@ button {
 
 /* ---------===================== Login end =====================--------- */
 
+/* ---------===================== Profiles start =====================--------- */
+
+.profiles__nav {
+    margin-bottom: 65px;
+}
+.header__designe-desc {
+    background: #FBFBFB;
+    box-shadow: 4px 1px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    padding: 75px 431px 23px 61px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 27px;
+}
+.header__desc-top {
+    display: flex;
+    align-items: center;
+    padding: 0 0 14px 25px;
+    column-gap: 27px;
+}
+.header__desc-btn {
+    font-family: var(--Inter);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: justify;
+    letter-spacing: -0.01em;
+    color: #242323;
+    padding: 24px 34px 25px 49px;
+    width: 258px;
+    transition: 500ms;
+}
+.desc-btn {
+    font-family: var(--Inter);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: justify;
+    letter-spacing: -0.01em;
+    color: #242323;
+    padding: 24px 34px 25px 49px;
+    transition: 500ms;
+}
+.header__desc-btn:hover {
+    background: #FBFBFB;
+    box-shadow: 4px 1px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+.header__desc-title {
+    font-family: var(--OpenSans);
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 61px;
+    text-transform: uppercase;
+    color: #242323;
+}
+.header__desc-title span {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 48px;
+}
+.
+
 /* ========================== Lesson progress start ============================= */
 
 .lessons {
