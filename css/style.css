@@ -1958,7 +1958,6 @@ button {
 
 .kategoriya .kategoriya-title {
     font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 800;
     font-size: 20px;
     line-height: 57px;
@@ -1968,7 +1967,6 @@ button {
 
 .kategoriya .kategoriya-link {
     font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -1977,4 +1975,102 @@ button {
 
 .kategoriya .kategoriya-link:not(:last-child) {
     margin-bottom: 16px;
+}
+
+.form__btns  {
+    display: flex;
+    column-gap: 19px;
+}
+
+.form__btns button:first-of-type {
+    padding: 11px 20px;
+    border: 1px solid #A4CF69;
+    border-radius: 8px;
+    color: var(--link);
+    font-size: 20px;
+    transition: .5s;
+}
+
+.form__btns button:first-of-type:hover {
+    background: var(--btn);
+    color: var(--white);
+}
+
+.form__btns button:last-of-type {
+    font-size: 20px;
+    padding: 10px 13px;
+    background: var(--btn);
+    color: var(--white);
+    border-radius: 8px;
+    transition: .5s;
+    border: 1px solid var(--btn);
+}
+
+.form__btns button:last-of-type:hover {
+    background: var(--white);
+    color: var(--link);
+}
+
+.form__main {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form__main-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.form__main-inputs span {
+    font-size: 30px;
+}
+
+.form__main-inputs input {
+    max-width: 544px;
+    width: 100%;
+    padding: 14px 19px;
+    border-radius: 10px;
+    border:  var(--border);
+    outline: none;
+}
+
+.form__main-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form__main-img span {
+    font-size: 30px;
+}
+
+.form__main-img img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.form__main-btns input::file-selector-button  {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.form__main-textarea {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.form__main-textarea textarea {
+    max-width: 525px;
+    width: 100%;
+    min-height: 342px;
+    resize: none;
+    outline: none;
 }
