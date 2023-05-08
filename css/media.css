@@ -1,0 +1,107 @@
+@media screen and (max-width: 1140px) {
+
+    /* Laptop */
+    .subscribe__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .subscribe__cards .subscribe__card {
+        margin: 25px 20px;
+    }
+
+    .about .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about__desc h2 {
+        margin-top: 30px;
+    }
+
+    .team__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* Laptop */
+    .header__content .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__title {
+        text-align: center;
+    }
+
+    .nav__list,
+    .registration {
+        display: none;
+    }
+
+    .nav__menu {
+        width: 40px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav__line{
+        width: 40px;
+        height: 2px;
+        background: var(--btn);
+        position: absolute;
+        border-radius: 10px;
+        transition: 500ms;
+    }
+
+    .nav__line:nth-of-type(2) {
+        transform: translateY(-10px);
+        width: 30px;
+    }
+    .nav__line:nth-of-type(3) {
+        transform: translateY(10px);
+        width: 20px;
+    }
+
+    .nav__menu:hover .nav__line:nth-of-type(2) {
+        transform: translateY(0) rotate(45deg);
+        width: 40px;
+    }
+    .nav__menu:hover .nav__line:nth-of-type(3) {
+        transform: translateY(0) rotate(315deg);
+        width: 40px;
+        transition-delay: 0.25s;
+    }
+    .nav__menu:hover .nav__line:first-of-type {
+        transform: translateX(150%);
+    }
+
+    .nav__icon span:first-child {
+        top: 20px;
+    }
+
+    .nav__icon span:last-child {
+        bottom: 20px;
+    }
+
+    .brands .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 1260px) {}
