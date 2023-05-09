@@ -168,6 +168,10 @@ button {
     width: 100%;
 }
 
+.nav__menu {
+    display: none;
+}
+
 .registration {
     max-width: 326px;
     width: 100%;
@@ -1740,12 +1744,6 @@ button {
     font-weight: 600;
 }
 
-
-
-
-
-
-
 .circle {
     display: flex;
     width: 100%;
@@ -2074,9 +2072,7 @@ button {
     font-size: 13px;
     line-height: 26px;
     text-align: right;
-
     color: #999999;
-
 }
 
 .blog__content-center .blog__content-center-text {
